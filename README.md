@@ -1,4 +1,5 @@
 ## c2g-HOF project page
+Goto https://samsunglabs.github.io/c2g-HOF-project-page
 
 ## Acknowledgments
 Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
