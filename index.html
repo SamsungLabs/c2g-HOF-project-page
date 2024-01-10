@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="MoRF avatars are created from short monocular videos and can be rendered in real-time (30+ FPS, 640x640px) on mobile devices">
+  <meta property="og:title" content="Cost-to-Go Function Generating Networks for High Dimensional Motion Planning"/>
+  <meta property="og:description" content="Cost-to-Go Function Generating Networks for High Dimensional Motion Planning"/>
+  <meta property="og:url" content="https://samsunglabs.github.io/c2g-HOF-project-page"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="Cost-to-Go Function Generating Networks for High Dimensional Motion Planning">
+  <meta name="twitter:description" content="MoRF avatars are created from short monocular videos and can be rendered in real-time (30+ FPS, 640x640px) on mobile devices">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Cost-to-Go Function Generating Networks for High Dimensional Motion Planning</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"><a style="color:black;">c2g-HOF</a>: <a style="color:black;">Cost-to-Go Function Generating Networks for High Dimensional Motion Planning</a> </h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <div class="author-portrait">
+                  <img class="img-fluid mb-3" src="static/images/avatar/jinwook.jpg" alt="">
+                </div>
+                <a href="https://scholar.google.com/citations?user=qLZYuUMAAAAJ&hl=en" target="_blank">Jinwook<br>Huh</a></span>
+              <span class="author-block">
+                <div class="author-portrait">
+                  <img class="img-fluid mb-3" src="static/images/avatar/ddlee.jpg" alt="">
+                </div>
+                <a href="https://scholar.google.com/citations?user=J0l7wWwAAAAJ&hl=en" target="_blank">Daniel<br>Lee</a></span>
+              <span class="author-block">
+                <div class="author-portrait">
+                  <img class="img-fluid mb-3" src="static/images/avatar/volkan.jpg" alt="">
+                </div>
+                <a href="https://scholar.google.com/citations?user=Q5KT-hEAAAAJ&hl=en" target="_blank">Volkan<br>Isler</a></span>
+            </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Samsung AI Center - New York</span>
+                  </div>
+
+                  <!-- ArXiv Link -->
+                  <span class="link-block">
+                    <a href="https://arxiv.org/abs/2012.06023.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>c2g-HOF arXiv</span>
+                  </a>
+                  <span class="link-block">
+                    <a href="https://arxiv.org/abs/2012.06023.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>Non-holonomic c2g-HOF arXiv</span>
+                  </a>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/SamsungLabs/c2g-HOF" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+
+                  <br>
+
+                
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="container">
+This paper presents c2g-HOF networks which learn to generate cost-to-go functions for manipulator motion planning. The c2g-HOF architecture consists of a cost-to-go function over the configuration space represented as a neural network (c2g-network) as well as a Higher Order Function (HOF) network which outputs the weights of the c2g-network for a given input workspace. Both networks are trained end-to-end in a supervised fashion using costs computed from traditional motion planners. Once trained, c2g-HOF can generate a smooth and continuous cost-to-go function directly from workspace sensor inputs (represented as a point cloud in 3D or an image in 2D). At inference time, the weights of the c2g-network are computed very efficiently and near-optimal trajectories are generated by simply following the gradient of the cost-to-go function. We compare c2g-HOF with traditional planning algorithms for various robots and planning scenarios. The experimental results indicate that planning with c2g-HOF is significantly faster than other motion planning algorithms, resulting in orders of magnitude improvement when including collision checking. Furthermore, despite being trained from sparsely sampled trajectories in configuration space, c2g-HOF generalizes to generate smoother, and often lower cost, trajectories. We demonstrate cost-to-go based planning on a 7 DoF manipulator arm where motion planning in a complex workspace requires only 0.13 seconds for the entire trajectory.
+        <br>
+        <br>
+      </div>
+      <div class="container" style="text-align:center;">
+        <img src="static/images/c2g_hof_overview.png" alt="Main Idea" style="text-align:center;width:659px;height:430px;"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="container">
+System Overview. The dataset contains (1) randomly
+generated workspaces, and (2) for each workspace, the cost
+to go between pairs of sampled configurations. Training
+architecture: C2g generating HOF network encodes an input
+workspace and outputs the cost-to-go function represented
+as a radial basis function network. Execution: During run
+time, following the gradient of the cost-to-go function yields
+continuous collision-free trajectories.
+        <br>
+        <br>
+      </div>
+
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <h2 class="title has-text-centered">c2g-HOF for manipulation</h2>
+
+      <video poster="" id="video1" controls muted height="100%">
+        <source src="static/videos/video_c2g-hof.mp4" type="video/mp4">
+      </video>
+
+      <h2 class="title has-text-centered">c2g-HOF Video</h2>
+
+      <video poster="" id="video2" controls muted height="100%">
+        <source src="static/videos/ICRA21_1434_VI_i.mp4" type="video/mp4">
+      </video>
+      
+      <h2 class="title has-text-centered">Non-holonomic c2g-HOF Video</h2>
+
+      <video poster="" id="video3" controls muted height="100%">
+        <source src="static/videos/IROS21_1733_VI_fi.mp4" type="video/mp4">
+      </video>
+      
+      <!-- <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths"> -->
+          
+          
+        <!-- </div>
+      </div> -->
+      <!-- </div>
+      </div>
+      </section> -->
+      <!-- End image carousel -->
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <
+    </div>
+  </div>
+</section> -->
+
+
+<!-- <section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX (c2g-HOF)</h2>
+      <pre><code>@inproceedings{huh2021cost,
+  title={Cost-to-go function generating networks for high dimensional motion planning},
+  author={Huh, Jinwook and Isler, Volkan and Lee, Daniel D},
+  booktitle={2021 IEEE International Conference on Robotics and Automation (ICRA)},
+  pages={8480--8486},
+  year={2021},
+  organization={IEEE}
+}</code></pre>
+      <h2 class="title">BibTeX (Non-holonomic c2-HOF)</h2>
+      <pre><code>@inproceedings{huh2021learning,
+  title={Learning continuous cost-to-go functions for non-holonomic systems},
+  author={Huh, Jinwook and Lee, Daniel D and Isler, Volkan},
+  booktitle={2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  pages={5772--5779},
+  year={2021},
+  organization={IEEE}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-nc/3.0/88x31.png"/>
+            </a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons Attribution-NonCommercial 4.0 International License</a> (CC-BY-NC).
+          </p>
+          <p>
+            This webpage is built with the template from <a
+                  href="https://github.com/nerfies/nerfies.github.io" target="_blank">NeRFies</a>. We sincerely thank <a href="https://keunhong.com/" target="_blank">Keunhong Park</a> for developing and open-sourcing this template.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
